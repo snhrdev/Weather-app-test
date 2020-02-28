@@ -6,7 +6,7 @@ const db = new Datastore('./database.db');
 
 require('dotenv').config();
 
-const port = env.process.PORT || 3000;
+const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`Weather app started on port ${port}`);
 });
